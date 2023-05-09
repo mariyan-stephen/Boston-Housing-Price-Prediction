@@ -47,3 +47,7 @@ plt.xlabel("Actual Prices")
 plt.ylabel("Predicted Prices")
 plt.title("Actual Prices vs Predicted Prices")
 plt.show()
+
+fig, ax = plt.subplots(figsize=(10,10))         # Sample figsize in inches
+sns.heatmap(df.corr().round(2), annot=True, ax=ax)
+plt.savefig('heatmap.png')

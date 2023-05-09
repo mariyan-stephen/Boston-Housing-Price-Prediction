@@ -1,5 +1,8 @@
 # California Housing Price Prediction
 
+![heatmap](heatmap.png)
+
+
 This project aims to predict housing prices in California using the California Housing dataset from the UCI Machine Learning Repository. The dataset is also included in the scikit-learn library, making it easy to load and use for experimentation.
 
 ## Dataset
