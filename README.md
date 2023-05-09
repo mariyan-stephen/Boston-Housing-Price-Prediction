@@ -1,26 +1,21 @@
-# Boston Housing Price Prediction
+# California Housing Price Prediction
 
-This project aims to predict housing prices in Boston using the Boston Housing dataset from the UCI Machine Learning Repository. The dataset is also included in the scikit-learn library, making it easy to load and use for experimentation.
+This project aims to predict housing prices in California using the California Housing dataset from the UCI Machine Learning Repository. The dataset is also included in the scikit-learn library, making it easy to load and use for experimentation.
 
 ## Dataset
 
-The Boston Housing dataset consists of 506 samples with 13 features and a target column (PRICE). The features are:
+The California Housing dataset consists of 20640 samples with 8 features and a target column (MedHouseVal). The features are:
 
-1. CRIM: per capita crime rate by town
-2. ZN: proportion of residential land zoned for lots over 25,000 sq.ft.
-3. INDUS: proportion of non-retail business acres per town
-4. CHAS: Charles River dummy variable (1 if tract bounds river; 0 otherwise)
-5. NOX: nitric oxides concentration (parts per 10 million)
-6. RM: average number of rooms per dwelling
-7. AGE: proportion of owner-occupied units built prior to 1940
-8. DIS: weighted distances to five Boston employment centers
-9. RAD: index of accessibility to radial highways
-10. TAX: full-value property-tax rate per $10,000
-11. PTRATIO: pupil-teacher ratio by town
-12. B: 1000(Bk - 0.63)^2 where Bk is the proportion of black people by town
-13. LSTAT: % lower status of the population
+1. MedInc: median income in block
+2. HouseAge: median house age in block
+3. AveRooms: average number of rooms
+4. AveBedrms: average number of bedrooms
+5. Population: block population
+6. AveOccup: average house occupancy
+7. Latitude: house block latitude
+8. Longitude: house block longitude
 
-The target column, PRICE, represents the median value of owner-occupied homes in $1000s.
+The target column, MedHouseVal, represents the median house value for California districts.
 
 ## Requirements
 
@@ -43,4 +38,3 @@ The target column, PRICE, represents the median value of owner-occupied homes in
 ## Results
 
 The performance of the linear regression model can be assessed using metrics such as mean squared error, root mean squared error, and R-squared score. The predicted prices can be visualized against the actual prices using a scatter plot.
-
